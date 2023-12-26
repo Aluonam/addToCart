@@ -1,25 +1,12 @@
 import styles from '@/styles/Home.module.css'
-import Carrito from '@/components/Carrito'
-import Productos from '@/components/Productos'
-import { ContextAppProvider } from '@/context/CartContextApp'
+import ScreenAddToCart from '@/screenAddToCart'
 
 
 export default function Home() {
   return (
     <>
       <main className={`${styles.main}`}>
-
-        <div className={styles.title}>
-          App carrito de compra
-        </div>
-
-        <div className={styles.container}>
-        <ContextAppProvider>
-          <Productos></Productos>
-          <Carrito></Carrito>
-        </ContextAppProvider>
-        </div>
-
+        <ScreenAddToCart></ScreenAddToCart>
       </main>
     </>
   )
