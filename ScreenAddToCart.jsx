@@ -1,5 +1,5 @@
 import React from 'react'
-import Carrito from '@/components/Carrito'
+import Carrito from './components/carrito/Carrito.jsx'
 import Productos from '@/components/Productos'
 import { ContextAppProvider } from '@/context/CartContextApp'
 import styles from '@/styles/Home.module.css'
