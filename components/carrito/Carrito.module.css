@@ -1,10 +1,19 @@
 
 .cartContainer{
     padding: 30px;
+    height: 400px;
+    overflow-y: scroll;
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
+    background-color: #ddbea9;
+    border-radius: 20px;
   }
+
+  .cartProducts::-webkit-scrollbar {
+    display: none;  /* Ocultar scroll */
+}
 
 .cartProducts{
   display: flex;
