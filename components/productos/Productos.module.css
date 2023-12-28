@@ -1,0 +1,10 @@
+
+.productContainer{
+    border: 1px solid purple;
+    width: 40vw;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
