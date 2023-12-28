@@ -6,14 +6,14 @@
   border: 1px solid black;
 }
 
-/* .title{
+.titleCart{
   border: 1px solid blue;
   height: 10vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 
 .container{
   border: 1px solid green;
