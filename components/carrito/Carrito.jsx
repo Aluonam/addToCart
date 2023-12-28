@@ -13,7 +13,7 @@ const Carrito = () => {
         setProductosCarrito(newProdCart)
     }
 
-    const shorCart = productosCarrito.map((obj, position) => {
+    const showCart = productosCarrito.map((obj, position) => {
         return(
             <>
             <div className={styles.rowProduct}>
@@ -30,11 +30,8 @@ const Carrito = () => {
   return (
 
     <div className={styles.cartContainer}>
-        Carrito
-        <br></br>
-        <br></br>
-
-        {shorCart}
+        <h3>Carrito</h3>
+        {showCart}
     </div>
 
   )
