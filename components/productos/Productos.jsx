@@ -37,7 +37,7 @@ const Productos = () => {
             <>
                 <div className={styles.rowProduct}>
                     <div><h4>{obj.name}</h4> <span className={styles.extraInfo}>{obj.description}</span></div> 
-                    <button className={styles.buttonrow} onClick={() => { setProductosCarrito([...productosCarrito, obj.name]) }}>Añadir</button>
+                    <button className={styles.buttonRow} onClick={() => { setProductosCarrito([...productosCarrito, obj.name]) }}>Añadir</button>
                 </div>
             </>
         ) 
