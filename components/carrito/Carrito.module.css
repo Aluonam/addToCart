@@ -1,9 +1,14 @@
 
 .cartContainer{
     border: 1px solid purple;
-    width: 20vw;
     padding: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
+.cartProducts{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}

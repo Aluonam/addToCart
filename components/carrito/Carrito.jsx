@@ -16,9 +16,9 @@ const Carrito = () => {
     const showCart = productosCarrito.map((obj, position) => {
         return(
             <>
-            <div className={styles.rowProduct}>
-            {obj}
-            <button onClick={()=>{ handleDelete(position) }}>eliminar</button>
+            <div className={styles.cartProducts}>
+                {obj}
+                <button onClick={()=>{ handleDelete(position) }}>eliminar</button>
             </div>
             </>
         )
