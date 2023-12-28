@@ -6,17 +6,20 @@ const Productos = () => {
     
     //  Productos que tenemos:
     const dataProduct = [
-        {name: "producto 1",
-        description: "hace cosas 1",
+        {name: "Traadescantia",
+        description: "cuidado nivel fácil",
         },
-        {name: "producto 2",
-        description: "hace cosas 2",
+        {name: "Pachira",
+        description: "cuidado nivel experto",
         },
-        {name: "producto 3",
-        description: "hace cosas 3",
+        {name: "Ave del paraiso",
+        description: "cuidado nivel medio",
         },
-        {name: "producto 4",
-        description: "hace cosas 4",
+        {name: "Peperomia",
+        description: "cuidado nivel fácil",
+        },
+        {name: "Calathea",
+        description: "cuidado nivel experto",
         },
     ]
 
