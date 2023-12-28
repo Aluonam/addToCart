@@ -36,7 +36,11 @@ const Productos = () => {
             //Cada elemento tendrá: el nombre y descripción del objeto y su propio botón.
             <>
                 <div className={styles.rowProduct}>
-                    <div><h4>{obj.name}</h4> <span className={styles.extraInfo}>{obj.description}</span></div> 
+                    
+                    <div className={styles.textProduct}>
+                        <h4>{obj.name}</h4> 
+                        <span className={styles.extraInfo}>{obj.description}</span>
+                    </div> 
                     <button className={styles.buttonRow} onClick={() => { setProductosCarrito([...productosCarrito, obj.name]) }}>Añadir</button>
                 </div>
             </>
@@ -44,7 +48,6 @@ const Productos = () => {
     })
 
     console.log(productosCarrito)
-
     return (
 
         <div className={styles.productContainer}>

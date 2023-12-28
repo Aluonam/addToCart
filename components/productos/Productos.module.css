@@ -30,6 +30,9 @@
     font-size: 13px;
   }
 
+  .textProduct{
+    width: 200px; 
+  }
 
   .buttonRow {
     min-width: 130px;
