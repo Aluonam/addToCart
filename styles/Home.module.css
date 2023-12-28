@@ -14,19 +14,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.container{
-  border: 1px solid green;
-  height: 90vh;
-  width: 100vw;
-  display: flex;
-  padding: 6em;
-  gap: 20px;
-  justify-content: center;
-}
-
-.rowProduct{
-  display: flex;
-  gap: 40px;
-  margin-bottom: 30px;
-}
