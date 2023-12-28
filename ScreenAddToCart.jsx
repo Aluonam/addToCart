@@ -8,7 +8,7 @@ const ScreenAddToCart = () => {
   return (
     <>
     <div className={styles.titleCart}>
-        App carrito de compra
+       <h1>Tu carrito de compra de plantas 🌱</h1> 
     </div>
 
     <div>
