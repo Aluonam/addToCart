@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import styles from '@/styles/Home.module.css'
+import styles from './Carrito.module.css'
 import { CartContext } from '../../context/CartContextApp.jsx';
 
 const Carrito = () => {
@@ -13,12 +13,12 @@ const Carrito = () => {
         setProductosCarrito(newProdCart)
     }
 
-    const shorCart = productosCarrito.map((obj, position) => {
+    const showCart = productosCarrito.map((obj, position) => {
         return(
             <>
-            <div className={styles.rowProduct}>
-            {obj}
-            <button onClick={()=>{ handleDelete(position) }}>eliminar</button>
+            <div className={styles.cartProducts}>
+                {obj}
+                <button  className={styles.cartButton} onClick={()=>{ handleDelete(position) }}>eliminar</button>
             </div>
             </>
         )
@@ -30,11 +30,8 @@ const Carrito = () => {
   return (
 
     <div className={styles.cartContainer}>
-        Carrito
-        <br></br>
-        <br></br>
-
-        {shorCart}
+        <h3>Carrito</h3>
+        {showCart}
     </div>
 
   )

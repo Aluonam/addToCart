@@ -1,50 +1,66 @@
 import React, { useContext } from 'react'
-import styles from '@/styles/Home.module.css'
+import styles from './Productos.module.css'
 import { CartContext } from '../../context/CartContextApp.jsx'
 
 const Productos = () => {
-    
+
     //  Productos que tenemos:
     const dataProduct = [
-        {name: "producto 1",
-        description: "hace cosas 1",
+        {
+            name: "Tradescantia",
+            description: "cuidado nivel fácil",
         },
-        {name: "producto 2",
-        description: "hace cosas 2",
+        {
+            name: "Pachira",
+            description: "cuidado nivel experto",
         },
-        {name: "producto 3",
-        description: "hace cosas 3",
+        {
+            name: "Ave del paraiso",
+            description: "cuidado nivel medio",
         },
-        {name: "producto 4",
-        description: "hace cosas 4",
+        {
+            name: "Peperomia",
+            description: "cuidado nivel fácil",
+        },
+        {
+            name: "Calathea",
+            description: "cuidado nivel experto",
         },
     ]
 
-    const {productosCarrito, setProductosCarrito} = useContext(CartContext)
+    const { productosCarrito, setProductosCarrito } = useContext(CartContext)
 
     //función que recorre y muestra cada elemento
-    const showProduct = dataProduct.map((obj)=>{return(
-        //Cada elemento tendrá: el nombre y descripcion del objeto y su propio botón.
-        <>
-        <div className={styles.rowProduct}>
-            {obj.name}-{obj.description}
-            <button onClick={()=>{setProductosCarrito([...productosCarrito, obj.name])}}>Añadir</button>
-        </div> 
-       </>
-    )})
+    const showProduct = dataProduct.map((obj) => {
+        return (
+            //Cada elemento tendrá: el nombre y descripción del objeto y su propio botón.
+            <>
+                <div className={styles.rowProduct}>
+                    
+                    <div className={styles.textProduct}>
+                        <h4>{obj.name}</h4> 
+                        <span className={styles.extraInfo}>{obj.description}</span>
+                    </div> 
+                    <button className={styles.buttonRow} onClick={() => { setProductosCarrito([...productosCarrito, obj.name]) }}>Añadir</button>
+                </div>
+            </>
+        ) 
+    })
 
-        console.log(productosCarrito)
+    console.log(productosCarrito)
+    return (
 
-  return (
-    
-    <div className={styles.productContainer}>
-        Productos:
-        <br></br>
-        <br></br>
-        {showProduct}
-    </div>
+        <div className={styles.productContainer}>
 
-  )
+            <h3>Productos:</h3>
+
+            <div className={styles.showProducts}>
+                {showProduct}
+            </div>
+
+        </div>
+
+    )
 }
 
 export default Productos
