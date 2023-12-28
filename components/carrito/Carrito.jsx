@@ -18,7 +18,7 @@ const Carrito = () => {
             <>
             <div className={styles.cartProducts}>
                 {obj}
-                <button onClick={()=>{ handleDelete(position) }}>eliminar</button>
+                <button  className={styles.cartButton} onClick={()=>{ handleDelete(position) }}>eliminar</button>
             </div>
             </>
         )

@@ -11,3 +11,26 @@
   justify-content: space-between;
   width: 250px;
 }
+
+.cartButton {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+  background: #adb5bd;
+}
+.cartButton:hover {
+  background-color: #ced4da;
+}
+.cartButton:active {
+  top: 2px;
+}
